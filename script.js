@@ -42,5 +42,11 @@ tabs.forEach((tab) => {
 });
 
 navigationButtons.forEach((button) => {
-  button.addEventListener('click', () => showTab(button.dataset.goTo));
+  button.addEventListener('click', (event) => {
+    event.preventDefault();
+    showTab(button.dataset.goTo);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 });
+
+document.getElementById('year').textContent = new Date().getFullYear();

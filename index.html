@@ -4,23 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Bros Dolz LLC is brothers Ed and Nic, building apps that solve real problems and everyday needs.">
   <title>Bros Dolz LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="page">
-    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark mode" aria-pressed="false">
-      <span class="theme-toggle__label">Toggle theme</span>
-    </button>
-
-    <section class="shell" aria-label="Bros Dolz LLC">
-      <header class="site-header">
-        <a class="brand" href="#about" aria-label="Bros Dolz home">
-          <span class="brand-mark">BD</span>
-          <span>Bros Dolz LLC</span>
-        </a>
-        <p class="header-note">Independent software studio <span class="status-dot"></span></p>
-      </header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#about" data-go-to="about" aria-label="Bros Dolz home">
+        <span class="brand-mark">BD</span>
+        <span>Bros Dolz</span>
+      </a>
 
       <nav class="tabs" aria-label="Main navigation">
         <button class="tab is-active" type="button" data-tab="about" aria-selected="true">About</button>
@@ -28,96 +25,163 @@
         <button class="tab" type="button" data-tab="contact" aria-selected="false">Contact</button>
       </nav>
 
-      <div class="content">
-        <section class="tab-panel is-active" id="about" data-panel="about" aria-labelledby="about-title">
-          <div class="hero-grid">
-            <div class="hero-copy">
-              <p class="eyebrow">Bros Dolz / Independent app makers</p>
-              <h1 id="about-title">Useful ideas, made real.</h1>
-              <p class="intro">Bros Dolz is Ed and Nic, two brothers who make apps to solve real problems and everyday necessities.</p>
-              <div class="hero-actions">
-                <button class="primary-button" type="button" data-go-to="apps">See our apps <span aria-hidden="true">-&gt;</span></button>
-                <button class="text-link" type="button" data-go-to="contact">Talk to us <span aria-hidden="true">-&gt;</span></button>
-              </div>
-            </div>
-            <div class="hero-art" aria-label="Bros Dolz app studio graphic">
-              <span class="orbit orbit-one"></span>
-              <span class="orbit orbit-two"></span>
-              <span class="art-label">BD<br><small>EST. 2024</small></span>
-              <span class="art-caption">Problem<br><strong>solved.</strong></span>
-            </div>
-          </div>
-          <div class="about-lower">
-            <div class="about-statement">
-              <p class="eyebrow">Why we build</p>
-              <p class="body-copy">We keep things practical: notice a need, build something useful, and make it easier for people to get on with their day.</p>
-            </div>
-            <div class="principles">
-              <div><span>01</span><strong>Start with people</strong><p>Good software begins with a real need.</p></div>
-              <div><span>02</span><strong>Keep it useful</strong><p>Simple, focused tools beat unnecessary noise.</p></div>
-              <div><span>03</span><strong>Make it better</strong><p>We listen, learn, and keep improving.</p></div>
-            </div>
-          </div>
-        </section>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark mode" aria-pressed="false">
+        <span class="theme-toggle__label">☀️</span>
+      </button>
+    </div>
+  </header>
 
-        <section class="tab-panel" id="apps" data-panel="apps" aria-labelledby="apps-title" hidden>
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">What we make</p>
-              <h2 id="apps-title">Our apps</h2>
-            </div>
-            <p class="section-count">04 current projects</p>
-          </div>
-          <div class="app-grid">
-            <a class="app-card" href="https://yaproll.app" target="_blank" rel="noreferrer">
-              <span class="app-number">01</span>
-              <span class="app-name">Yaproll</span>
-              <span class="app-description">A better way to keep conversations moving.</span>
-              <span class="app-meta">By Ed <span aria-hidden="true">-&gt;</span></span>
-            </a>
-            <a class="app-card" href="https://alarmplusplus.brosdolz.com" target="_blank" rel="noreferrer">
-              <span class="app-number">02</span>
-              <span class="app-name">Alarm++</span>
-              <span class="app-description">A smarter alarm experience, built for real mornings.</span>
-              <span class="app-meta">By Nic <span aria-hidden="true">-&gt;</span></span>
-            </a>
-            <a class="app-card" href="https://byefeed.app" target="_blank" rel="noreferrer">
-              <span class="app-number">03</span>
-              <span class="app-name">ByeFeed</span>
-              <span class="app-description">A calmer way to take back control of your feed.</span>
-              <span class="app-meta">By Nic <span aria-hidden="true">-&gt;</span></span>
-            </a>
-            <a class="app-card" href="https://itag-hub.brosdolz.com" target="_blank" rel="noreferrer">
-              <span class="app-number">04</span>
-              <span class="app-name">iTag Hub</span>
-              <span class="app-description">A simple home for organizing and managing your tags.</span>
-              <span class="app-meta">By Ed <span aria-hidden="true">-&gt;</span></span>
-            </a>
-          </div>
-        </section>
-
-        <section class="tab-panel contact-panel" id="contact" data-panel="contact" aria-labelledby="contact-title" hidden>
-          <div class="contact-grid">
-            <div>
-              <p class="eyebrow">Get in touch</p>
-              <h2 id="contact-title">Let’s make<br><em>something useful.</em></h2>
-              <p class="body-copy">Questions about one of our apps, support, or an idea worth exploring? We’d like to hear from you.</p>
-            </div>
-            <address>
-              <strong>BROS DOLZ LLC</strong>
-              <a href="mailto:support@brosdolz.com">support@brosdolz.com</a>
-              <a href="tel:+15184979889">+1 518-497-9889</a>
-              <span class="address-gap">418 Broadway Ste N</span>
-              <span>Albany, NY 12207-2922</span>
-              <span>United States</span>
-            </address>
-          </div>
-        </section>
+  <main class="container content">
+    <section class="tab-panel is-active" id="about" data-panel="about" aria-labelledby="about-title">
+      <div class="hero">
+        <p class="eyebrow">Independent app studio</p>
+        <h1 id="about-title">Apps that solve real problems.</h1>
+        <p class="lead">Bros Dolz is Ed and Nic, two brothers who build apps for real problems and everyday needs. We notice something that gets in the way, then build a simple, focused tool to fix it.</p>
+        <div class="hero-actions">
+          <button class="button button--primary" type="button" data-go-to="apps">See our apps</button>
+          <button class="button button--ghost" type="button" data-go-to="contact">Contact us</button>
+        </div>
       </div>
 
-      <footer>Built by brothers Ed + Nic <span aria-hidden="true">/</span> Bros Dolz LLC</footer>
+      <div class="founders">
+        <article class="card founder">
+          <span class="avatar" aria-hidden="true">E</span>
+          <div>
+            <h3>Ed</h3>
+            <p>Co-founder. Builds YapRoll and iTag Hub.</p>
+          </div>
+        </article>
+        <article class="card founder">
+          <span class="avatar" aria-hidden="true">N</span>
+          <div>
+            <h3>Nic</h3>
+            <p>Co-founder. Builds ByeFeed and Alarm++.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="principles">
+        <div>
+          <h3>Start with a real need</h3>
+          <p>Every app begins with a problem we or the people around us actually have.</p>
+        </div>
+        <div>
+          <h3>Keep it simple</h3>
+          <p>Focused tools that do one job well, without the clutter.</p>
+        </div>
+        <div>
+          <h3>Respect the user</h3>
+          <p>No dark patterns. We listen to feedback and keep improving.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="apps" data-panel="apps" aria-labelledby="apps-title" hidden>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">What we make</p>
+          <h2 id="apps-title">Our apps</h2>
+        </div>
+        <a class="link" href="https://play.google.com/store/apps/developer?id=Bros+Dolz" target="_blank" rel="noreferrer">All apps on Google Play ↗</a>
+      </div>
+
+      <div class="app-grid">
+        <article class="card app-card">
+          <div class="app-head">
+            <span class="app-icon" aria-hidden="true">B</span>
+            <div>
+              <h3>ByeFeed</h3>
+              <p class="app-by">by Nic · App &amp; site blocker</p>
+            </div>
+          </div>
+          <p class="app-description">Block distracting apps, sites, keywords, and endless feeds like Shorts and Reels, and keep the rest of each app usable.</p>
+          <div class="app-links">
+            <a class="link" href="https://byefeed.app" target="_blank" rel="noreferrer">Website ↗</a>
+            <a class="link" href="https://play.google.com/store/apps/details?id=com.byefeed.app" target="_blank" rel="noreferrer">Google Play ↗</a>
+          </div>
+        </article>
+
+        <article class="card app-card">
+          <div class="app-head">
+            <span class="app-icon" aria-hidden="true">A</span>
+            <div>
+              <h3>Alarm++</h3>
+              <p class="app-by">by Nic · Video clock alarm</p>
+            </div>
+          </div>
+          <p class="app-description">Wake up to tones, your own videos, or a shuffled playlist. Also includes a world clock, timer, and stopwatch.</p>
+          <div class="app-links">
+            <a class="link" href="https://alarmplusplus.brosdolz.com" target="_blank" rel="noreferrer">Website ↗</a>
+            <a class="link" href="https://play.google.com/store/apps/details?id=com.alarmplusplus.app" target="_blank" rel="noreferrer">Google Play ↗</a>
+          </div>
+        </article>
+
+        <article class="card app-card">
+          <div class="app-head">
+            <span class="app-icon" aria-hidden="true">Y</span>
+            <div>
+              <h3>YapRoll</h3>
+              <p class="app-by">by Ed · Chat with new people</p>
+            </div>
+          </div>
+          <p class="app-description">Meet someone online right now who fits your preferences, then chat by text, voice note, or GIF.</p>
+          <div class="app-links">
+            <a class="link" href="https://yaproll.app" target="_blank" rel="noreferrer">Website ↗</a>
+            <a class="link" href="https://play.google.com/store/apps/details?id=com.yaproll.app" target="_blank" rel="noreferrer">Google Play ↗</a>
+          </div>
+        </article>
+
+        <article class="card app-card">
+          <div class="app-head">
+            <span class="app-icon" aria-hidden="true">i</span>
+            <div>
+              <h3>iTag Hub</h3>
+              <p class="app-by">by Ed · Bluetooth finder</p>
+            </div>
+          </div>
+          <p class="app-description">Find nearby items with generic Bluetooth tracker tags. It works with no account and no cloud.</p>
+          <div class="app-links">
+            <a class="link" href="https://itag-hub.brosdolz.com" target="_blank" rel="noreferrer">Website ↗</a>
+            <a class="link" href="https://play.google.com/store/apps/details?id=com.itaghub.app" target="_blank" rel="noreferrer">Google Play ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="contact" data-panel="contact" aria-labelledby="contact-title" hidden>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Get in touch</p>
+          <h2 id="contact-title">Contact</h2>
+        </div>
+      </div>
+      <p class="lead lead--small">Questions about one of our apps, need support, or have an idea? Send us an email and we'll get back to you.</p>
+
+      <address class="card contact-card">
+        <div class="contact-row">
+          <span class="contact-label">Company</span>
+          <span>BROS DOLZ LLC</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">Email</span>
+          <a class="link" href="mailto:support@brosdolz.com">support@brosdolz.com</a>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">Phone</span>
+          <a class="link" href="tel:+15184979889">+1 518-497-9889</a>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">Address</span>
+          <span>418 Broadway Ste N<br>Albany, NY 12207-2922<br>United States</span>
+        </div>
+      </address>
     </section>
   </main>
+
+  <footer class="container site-footer">
+    <span>© <span id="year">2026</span> Bros Dolz LLC</span>
+    <span>Built by brothers Ed &amp; Nic</span>
+  </footer>
 
   <script src="script.js"></script>
 </body>
