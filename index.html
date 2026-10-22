@@ -13,10 +13,77 @@
       <span class="theme-toggle__label">Toggle theme</span>
     </button>
 
-    <section class="hero" aria-label="Bros Dolz LLC coming soon page">
-      <p class="eyebrow">Bros Dolz LLC</p>
-      <h1>Coming Soon</h1>
-      <p class="subtext">We make apps.</p>
+    <section class="shell" aria-label="Bros Dolz LLC">
+      <header class="site-header">
+        <a class="brand" href="#about" aria-label="Bros Dolz home">
+          <span class="brand-mark">BD</span>
+          <span>Bros Dolz LLC</span>
+        </a>
+        <p class="header-note">Small team. Useful software.</p>
+      </header>
+
+      <nav class="tabs" aria-label="Main navigation">
+        <button class="tab is-active" type="button" data-tab="about" aria-selected="true">About</button>
+        <button class="tab" type="button" data-tab="apps" aria-selected="false">Apps</button>
+        <button class="tab" type="button" data-tab="contact" aria-selected="false">Contact</button>
+      </nav>
+
+      <div class="content">
+        <section class="tab-panel is-active" id="about" data-panel="about" aria-labelledby="about-title">
+          <p class="eyebrow">Bros Dolz / Independent app makers</p>
+          <h1 id="about-title">Apps with a reason to exist.</h1>
+          <p class="intro">Bros Dolz is Ed and Nic, two brothers who make apps to provide real solutions to everyday problems and necessities.</p>
+          <p class="body-copy">We keep things practical: notice a need, build something useful, and make it easier for people to get on with their day.</p>
+          <button class="text-link" type="button" data-go-to="apps">Explore our apps <span aria-hidden="true">-&gt;</span></button>
+        </section>
+
+        <section class="tab-panel" id="apps" data-panel="apps" aria-labelledby="apps-title" hidden>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">What we make</p>
+              <h2 id="apps-title">Our apps</h2>
+            </div>
+            <p class="section-count">04 current projects</p>
+          </div>
+          <div class="app-grid">
+            <a class="app-card" href="https://yaproll.app" target="_blank" rel="noreferrer">
+              <span class="app-number">01</span>
+              <span class="app-name">Yaproll</span>
+              <span class="app-meta">By Ed <span aria-hidden="true">-&gt;</span></span>
+            </a>
+            <a class="app-card" href="https://alarmplusplus.brosdolz.com" target="_blank" rel="noreferrer">
+              <span class="app-number">02</span>
+              <span class="app-name">Alarm++</span>
+              <span class="app-meta">By Nic <span aria-hidden="true">-&gt;</span></span>
+            </a>
+            <a class="app-card" href="https://byefeed.app" target="_blank" rel="noreferrer">
+              <span class="app-number">03</span>
+              <span class="app-name">ByeFeed</span>
+              <span class="app-meta">By Nic <span aria-hidden="true">-&gt;</span></span>
+            </a>
+            <a class="app-card" href="https://itag-hub.brosdolz.com" target="_blank" rel="noreferrer">
+              <span class="app-number">04</span>
+              <span class="app-name">iTag Hub</span>
+              <span class="app-meta">By Ed <span aria-hidden="true">-&gt;</span></span>
+            </a>
+          </div>
+        </section>
+
+        <section class="tab-panel contact-panel" id="contact" data-panel="contact" aria-labelledby="contact-title" hidden>
+          <p class="eyebrow">Get in touch</p>
+          <h2 id="contact-title">Contact us.</h2>
+          <address>
+            <strong>BROS DOLZ LLC</strong>
+            <a href="mailto:support@brosdolz.com">support@brosdolz.com</a>
+            <span>418 Broadway Ste N</span>
+            <span>Albany, NY 12207-2922</span>
+            <span>United States</span>
+            <a href="tel:+15184979889">+1 518-497-9889</a>
+          </address>
+        </section>
+      </div>
+
+      <footer>Built by brothers Ed + Nic <span aria-hidden="true">/</span> Bros Dolz LLC</footer>
     </section>
   </main>
 

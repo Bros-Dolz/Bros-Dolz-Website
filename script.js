@@ -20,3 +20,27 @@ toggle.addEventListener('click', () => {
   localStorage.setItem('theme', nextTheme);
   applyTheme(nextTheme);
 });
+
+const tabs = document.querySelectorAll('[data-tab]');
+const panels = document.querySelectorAll('[data-panel]');
+const navigationButtons = document.querySelectorAll('[data-go-to]');
+
+function showTab(tabName) {
+  tabs.forEach((tab) => {
+    const isActive = tab.dataset.tab === tabName;
+    tab.classList.toggle('is-active', isActive);
+    tab.setAttribute('aria-selected', String(isActive));
+  });
+
+  panels.forEach((panel) => {
+    panel.hidden = panel.dataset.panel !== tabName;
+  });
+}
+
+tabs.forEach((tab) => {
+  tab.addEventListener('click', () => showTab(tab.dataset.tab));
+});
+
+navigationButtons.forEach((button) => {
+  button.addEventListener('click', () => showTab(button.dataset.goTo));
+});
