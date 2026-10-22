@@ -5,9 +5,10 @@
   --text: #111827;
   --muted: #6b7280;
   --border: #e5e7eb;
-  --accent: #e8573c;
-  --accent-hover: #d14a30;
-  --accent-soft: #fdece8;
+  --accent: #0e8a7e;
+  --accent-hover: #0b766c;
+  --accent-soft: #e0f4f1;
+  --on-accent: #ffffff;
 }
 
 :root[data-theme='dark'] {
@@ -17,9 +18,10 @@
   --text: #f3f4f6;
   --muted: #9ca3af;
   --border: #262a31;
-  --accent: #ff7a5c;
-  --accent-hover: #ff9177;
-  --accent-soft: #2a1a16;
+  --accent: #3dd6c6;
+  --accent-hover: #63e0d3;
+  --accent-soft: #12302d;
+  --on-accent: #0e1013;
 }
 
 * { box-sizing: border-box; }
@@ -74,15 +76,9 @@ h1, h2, h3, p { margin: 0; }
 }
 
 .brand-mark {
-  display: grid;
-  place-items: center;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 8px;
-  background: var(--accent);
-  color: #fff;
-  font-size: 0.72rem;
-  font-weight: 700;
 }
 
 .tabs {
@@ -190,7 +186,7 @@ h3 {
   transition: background 150ms ease, border-color 150ms ease;
 }
 
-.button--primary { border: 1px solid var(--accent); background: var(--accent); color: #fff; }
+.button--primary { border: 1px solid var(--accent); background: var(--accent); color: var(--on-accent); }
 .button--primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
 .button--ghost { border: 1px solid var(--border); background: var(--surface); color: var(--text); }
 .button--ghost:hover { border-color: var(--muted); }
@@ -286,16 +282,11 @@ h3 {
 }
 
 .app-icon {
-  display: grid;
-  place-items: center;
   flex: none;
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: 1.1rem;
-  font-weight: 700;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px var(--border);
 }
 
 .app-by {
